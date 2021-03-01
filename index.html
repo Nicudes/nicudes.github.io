@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
+    <title>Huy Tran Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div class="main-container">
+  <div class="navigation-bar">
+    <span style="cursor: pointer;" class="home-button" onclick="NavHome()">Home</span>
+    <span style="cursor: pointer;" class="portfolio-button" onclick="NavPortfolio()">Portfolio</span>
+    <span style="cursor: pointer;" class="about-button" onclick="NavAbout()">About</span>
+    <span class="contact-button" onclick="NavContact()">Contact</span>
+</div>
+    <div class="view-box">
+      
+        <div class="icon-wrapper" id="icon-wrapper">
+    
+            <div class="frontend-wrap">
+
+              <article id="display-all" class="badge show-all-skill" onclick="ShowAll()" >
+                  <div class="rounded">
+                      <p>Show All</p>
+                  </div>
+              </article>
+            </div>
+            <div class="frontend-wrap">
+              <article  id="display-none" class="badge hide-all-skill"   onclick="HideAll()" >
+                  <div class="rounded">
+                      <p onclick="HideAll()">Hide All</p>
+                  </div>
+              </article>
+            </div>
+            <div class="frontend-wrap">
+            <article class="badge frontend-skill">
+                <div class="rounded">
+                    <img src="../Images/FrontEnd.png">
+                </div>
+            </article>
+            <div class="display-skill"  id="show-all">
+              <p>Front End</p>
+              <img src="../Images/FrontEndSkill.png">
+            </div>
+          </div>
+          <div class="frontend-wrap">
+            <article class="badge photoshop-skill">
+                <div class="rounded">
+                    <img src="../Images/Photoshop.png">
+                </div>
+            </article>
+            <div class="display-skill"   id="show-all1">
+              <p>Photoshop</p>
+              <img src="../Images/PhotoshopSkill.png">
+            </div>
+          </div>
+            <div class="frontend-wrap">
+              <article class="badge blazor-skill">
+                  <div class="rounded">
+                      <img src="../Images/Blazor.png">
+                  </div>
+              </article>
+              <div class="display-skill" id="show-all2">
+                <p>Blazor</p>
+              <img src="../Images/BlazorSkill.png">
+              </div>
+            </div>
+            <div class="frontend-wrap">
+              <article class="badge xamarin-skill">
+                  <div class="rounded">
+                      <img src="../Images/XamarinIcon.png">
+                  </div>
+              </article>
+              <div class="display-skill" id="show-all3">
+                <p>Xamarin</p>
+              <img src="../Images/XamarinSkill.png">
+              </div>
+            </div>
+            <div class="frontend-wrap">
+              <article class="badge unity-skill">
+                  <div class="rounded">
+                      <img src="../Images/Unity.png">
+                      </div>
+              </article>
+              <div class="display-skill" id="show-all4">
+                <p>Unity</p>
+              <img src="../Images/UnitySkill.png">
+              </div>
+            </div>
+            <div class="frontend-wrap">
+            <article class="badge database-skill">
+                <div class="rounded">
+                    <img src="../Images/Database.png">
+                    </div>
+            </article>
+            <div class="display-skill" id="show-all5">
+              <p>Database</p>
+              <img src="../Images/DatabaseSkill.png">
+            </div>
+            </div>
+        </div>
+
+        
+        <div class="view-content-home" id="view-content-home">
+            <div class="animated-title">
+                <div class="text-top">
+                  <div>
+                    <h3>Huy Tran</h3>
+                    <span>Gothenburg, Sweden</span>
+                  </div>
+                </div>
+                <div class="text-bottom">
+                  <div>Creative junior developer</div>
+                </div>
+              </div>
+              <div class="portfolio-container" onclick="NavPortfolio()">
+  
+                <div class="item">
+                  <div class="content">
+                    <h2>View Portfolio</h2>
+                  </div>
+                  
+                  <div class="previews">
+                    <div class="preview-image">
+                      <img src="../Images/HalmPreview.jpg">
+                    </div>
+                    <div class="preview-image">
+                      <img src="../Images/hundrePreview.jpg">
+                    </div>
+                    <div class="preview-image">
+                      <img src="../Images/Plejd.png">
+                    </div>
+                    <div class="preview-image">
+                      <img src="../Images/XamarinPreview.jpg">
+                    </div>
+                    <div class="preview-image">
+                      <img src="../Images/Corkie.jpg">
+                    </div>
+                  </div>
+                </div>
+        </div>
+        </div>
+        
+        <div class="view-content-portfolio" id="view-content-portfolio">
+          <div class="portfolio-slide" id="halm-portfolio">
+
+            <div class="portfolio1" id="portfolio1">
+              <div class="portfolio-title"> 
+                <h2>Project HALM - Task management application</h2>
+              </div>
+
+              <div class="portfolio-middle">
+                <i style="margin-top:20%; margin-right: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; visibility: hidden;" onclick="PreviousPortfolio()" class="fas fa-arrow-alt-circle-left"></i>
+
+                  <div class="portfolio-image">
+                    <div class="fullsize-portfolio-image"></div>       
+                  </div>
+                  <i style="margin-top:20%; margin-left: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; " onclick="NextPortfolio()" class="fas fa-arrow-alt-circle-right" ></i>
+
+                </div>
+              <div class="portfolio-text">  
+              <div class="project-text">
+                <p>This is created to make it possible for a company to create workorders on the desktop application. When the workorder is created, the staff can accept the workorder and get assigned
+                  to the task. If the task is finished the workorder gets more information input such as time, cost and comments.</p>
+         
+              </div>
+                <div class="language-info">
+                  <p>Language: C#, Xaml</p>
+                  <p>Platform: Desktop, Mobile</p>
+
+                  <p>Xamarin Forms, UWP, Firebase, Azure</p>
+                </div>
+         
+              </div>
+          </div>
+
+          <div class="portfolio2" id="portfolio2">
+            <div class="portfolio-title"> 
+              <h2>Project at Plejd - Display data from database</h2>
+            </div>
+
+            <div class="portfolio-middle">
+              <i style="margin-top:20%; margin-right: 10px; color: whitesmoke; font-size: 30px; cursor: pointer;" onclick="PreviousPortfolio()" class="fas fa-arrow-alt-circle-left"></i>
+
+                <div class="portfolio-image">
+                  <div class="fullsize-portfolio-image2"></div>       
+                </div>
+                <i style="margin-top:20%; margin-left: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; " onclick="NextPortfolio()" class="fas fa-arrow-alt-circle-right" ></i>
+
+              </div>
+            <div class="portfolio-text">  
+            <div class="project-text">
+              <p>Developed during my first internship at Plejd. This application takes in data from a local mongoDB database filled with test results. Then make it possible to display information
+                and results on tests. The application can display failed test depending on threshold set by the user. You can either look at an overview through a graph on dive into the specific iteration of a test.
+              </p>
+        
+            </div>
+              <div class="language-info">
+                <p>Language: C#, html, css, javascript</p>
+                <p>Platform: Web Application</p>
+                <p>Blazor, mongoDB</p>
+              </div>
+       
+            </div>
+        </div>
+
+        <div class="portfolio3" id="portfolio3">
+          <div class="portfolio-title"> 
+            <h2>Hundré Travels - Inspire to travel</h2>
+          </div>
+
+          <div class="portfolio-middle">
+            <i style="margin-top:20%; margin-right: 10px; color: whitesmoke; font-size: 30px; cursor: pointer;" onclick="PreviousPortfolio()" class="fas fa-arrow-alt-circle-left"></i>
+
+              <div class="portfolio-image">
+                <div class="fullsize-portfolio-image3"></div>       
+              </div>
+              <i style="margin-top:20%; margin-left: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; " onclick="NextPortfolio()" class="fas fa-arrow-alt-circle-right" ></i>
+
+            </div>
+          <div class="portfolio-text">  
+          <div class="project-text">
+            <p>This website is created to inspire people. To give people tip on interesting destinations and make them want to travel. The site is thought to be an affiliate site which 
+            redirects the user to travel agencies after they view the destinations.  
+            </p>
+          
+          </div>
+            <div class="language-info">
+              <p>Language: html, css, javascript</p>
+              <p>Platform: Website</p>
+              <p>Firebase, jQuery, Bootstrap, Json </p>
+            </div>
+     
+          </div>
+      </div>
+
+      <div class="portfolio4" id="portfolio4">
+        <div class="portfolio-title"> 
+          <h2>Soothing App - Takes you to your calm place</h2>
+        </div>
+
+        <div class="portfolio-middle">
+          <i style="margin-top:20%; margin-right: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; " onclick="PreviousPortfolio()" class="fas fa-arrow-alt-circle-left" id="previous-page"></i>
+
+            <div class="portfolio-image">
+              <div class="fullsize-portfolio-image4"></div>       
+            </div>
+            <i style="margin-top:20%; margin-left: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; " onclick="NextPortfolio()" class="fas fa-arrow-alt-circle-right" id="next-page" ></i>
+
+          </div>
+        <div class="portfolio-text">  
+        <div class="project-text">
+          <p>This application is used to calm you down by viewing beautiful images and playing calm sounds that fits your choice. This is created only in Xamarin forms.</p>
+        
+        </div>
+          <div class="language-info">
+            <p>Language: C#, Xaml</p>
+            <p>Platform: Mobile</p>
+
+            <p>Xamarin Forms</p>
+          </div>
+   
+        </div>
+    </div>
+
+    <div class="portfolio5" id="portfolio5">
+      <div class="portfolio-title"> 
+        <h2>Cork The Hero - Unity game jam creation</h2>
+      </div>
+
+      <div class="portfolio-middle">
+        <i style="margin-top:20%; margin-right: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; " onclick="PreviousPortfolio()" class="fas fa-arrow-alt-circle-left" id="previous-page"></i>
+
+          <div class="portfolio-image">
+            <div class="fullsize-portfolio-image5"></div>       
+          </div>
+          <i style="margin-top:20%; margin-left: 10px; color: whitesmoke; font-size: 30px; cursor: pointer; visibility: hidden; " onclick="NextPortfolio()" class="fas fa-arrow-alt-circle-right" id="next-page" ></i>
+
+        </div>
+      <div class="portfolio-text">  
+      <div class="project-text">
+        <p>A game created for Brackeys Game Jam. Developed in Unity. The game is about a cork which shoots corks to defeat enemies and to close black holes. When the holes are closed...the boss will arrive.</p>
+    <a href="https://mattisv.itch.io/corkie"  target="_blank" rel="noopener noreferrer">Link to the game</a>
+      </div>
+        <div class="language-info">
+          <p>Language: C#</p>
+          <p>Platform: Desktop and browser game</p>
+
+          <p>Unity</p>
+        </div>
+ 
+      </div>
+  </div>
+
+
+        </div>
+        </div>
+        <div class="view-content-about" id="view-content-about">
+        <div class="my-image">
+          <div><img src="../Images/ME.jpg"> </div>
+          <div class="my-image-text">
+            <p>My name is Huy Tran.</p>
+            <p>I am currenly in my last term before finishing school and ready to start working as a developer.</p>
+            <p>Passionate about programming as I can create things that I need but doesn't exist yet or need to be paid for.</p>
+            <p>Love new technologies and read IT news daily.</p>
+          </div>
+
+        </div>  
+
+        <div class="my-education">
+          <h2 style="text-align: center;">Education</h2>
+          <div class="education-wrap">
+            <h3 style="text-align: center;">System Developer .NET</h3>
+            <p style="font-size: 14px; text-align: center; font-weight: bold; border-bottom: 1px solid #000000;">Newton Yrkeshögskola - Higher Vocational Education</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Object Oriented Programming 1 & 2</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Testing </p>
+            <p style="font-size: 14px; margin-left:10px;"> • Database</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Web Developement</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Agile Software Development</p>
+          </div>
+          <div class="education-wrap">
+            <h3 style="text-align: center;">Video Games ­ an Introduction</h3>
+            <p style="font-size: 14px; text-align: center; font-weight: bold; border-bottom: 1px solid #000000;">Linnaeus University - Separate Course</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Computer Game Taxonomies and Genres</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Subject studies </p>
+            <p style="font-size: 14px; margin-left:10px;"> • Music Education</p>
+          </div>
+          <div class="education-wrap">
+            <h3 style="text-align: center;">Teacher Education</h3>
+            <p style="font-size: 14px; text-align: center; font-weight: bold; border-bottom: 1px solid #000000;">University of Borås - Bachelor of Education</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Core Education Subjects</p>
+            <p style="font-size: 14px; margin-left:10px;"> • Game Design </p>
+            <p style="font-size: 14px; margin-left:10px;"> • Game Analytics</p>
+          </div>
+     
+        </div>
+        <div class="my-work">
+          <h2 style="text-align: center;">Work</h2>
+
+          <div class="work-wrap">
+            <h3 style="text-align: center;">Developer - Intern</h3>
+            <p style="font-size: 14px; text-align: center; font-weight: bold; border-bottom: 1px solid #000000;">Pejd - |Sep 2020 - Dec 2020|</p>
+            <p style="font-size: 14px; margin-left:10px;"> Work in a team to build a data visualisation tool from scratch. Taking the data from a mongoDB and visualize it to make it easier for testers to find possible problems. </p>
+            <p style="font-size: 14px; margin-left:10px; text-align: center;"> Blazor | C# | html | css | mongoDB | jQuery </p>
+          </div>
+
+          <div class="work-wrap">
+            <h3 style="text-align: center;">Teacher</h3>
+            <p style="font-size: 14px; text-align: center; font-weight: bold; border-bottom: 1px solid #000000;">Önneredsskolan - |Aug 2014 - Feb 2020|</p>
+            <p style="font-size: 14px; margin-left:10px;"> Worked as a teacher at a school with age between 6 and 16. Mostly worked with students age 7 to 10. 
+            Teaching basic programming, technics and music as my head subjects. After school hours I worked at the leisure time centre.
+            </p>
+            <p style="font-size: 14px; margin-left:10px; text-align: center;"> Technics | Programming | Music | leisure time centre </p>
+          </div>
+
+          <div class="work-wrap">
+            <h3 style="text-align: center;">Summer Camp Leader</h3>
+            <p style="font-size: 14px; text-align: center; font-weight: bold; border-bottom: 1px solid #000000;">Majblommans Riksförbund - |Summer 2013 & 2014|</p>
+            <p style="font-size: 14px; margin-left:10px;"> Helping children and teenagers which family can't afford to go on vacation during summer break, giving them a summer to remember.
+            We plan activities and just enjoy the summer with the kids</p>
+      
+          </div>
+        </div>
+      </div>
+        <div class="view-content-contact" id="view-content-contact"> 
+          <h2 style="text-align: center; color: whitesmoke; margin-top:5%;">Huy Tran</h2>
+          <ul>
+            <li onclick="CopyMail()"><span><i class="far fa-envelope" style="margin-right: 15px;"></i> Nicudes@gmail.com</span></li>
+            <li onclick="CopyNumber()"><span><i class="fas fa-mobile-alt" style="margin-right: 15px;"></i>0769062354</span></li>
+          </ul>
+
+          <p style="margin-top: -10%; color:whitesmoke">Click to copy</p>
+          <input type="text" value="Nicudes@gmail.com" id="my-mail" style="opacity: 0; width: 0.5px; height: 0.5px;">
+          <input type="text" value="0769062354" id="my-number" style="opacity: 0; width: 0.5px; height: 0.5px;">
+  
+       </div>
+      </div>
+      <div id="snackbar">Copied to clipboard</div>
+<div class="background-effect"> 
+<div id="particle-container">
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+	<div class="particle"></div>
+</div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
