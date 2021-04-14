@@ -1,3 +1,6 @@
+
+var x = window.matchMedia("(max-width: 500px)")
+
 function ShowAll(){
     document.getElementById('show-all').setAttribute("class", "red");
     document.getElementById('show-all1').setAttribute("class", "red");
@@ -28,18 +31,24 @@ function NavHome(){
     document.getElementById('view-content-portfolio').style.opacity= 0;
     document.getElementById('view-content-about').style.opacity= 0;
     document.getElementById('view-content-contact').style.opacity= 0;
+    document.getElementById('my-skills-mobile').style.opacity=1;
+
     
     setTimeout(() => {
         document.getElementById('view-content-portfolio').style.display = "none";
         document.getElementById('view-content-about').style.display = "none";
         document.getElementById('view-content-contact').style.display = "none";
+        document.getElementById('my-skills-mobile').style.display = "block";
+
     }, 400);
     
 
 
     setTimeout(() => {
         document.getElementById('view-content-home').style.display="flex";
-        document.getElementById('icon-wrapper').style.display = "flex";
+        if(!x.matches){
+            document.getElementById('icon-wrapper').style.display = "flex";
+        }
     }, 400);
 
     
@@ -56,11 +65,14 @@ function NavPortfolio(){
     document.getElementById('view-content-about').style.opacity= 0;   
     document.getElementById('view-content-contact').style.opacity= 0;   
     document.getElementById('icon-wrapper').style.opacity= 0;
+    document.getElementById('my-skills-mobile').style.opacity=0;
     setTimeout(() => {
         document.getElementById('view-content-home').style.display="none";
         document.getElementById('view-content-about').style.display = "none";
         document.getElementById('view-content-contact').style.display = "none";
         document.getElementById('icon-wrapper').style.display = "none";
+        document.getElementById('my-skills-mobile').style.display="none";
+
     }, 400);
 
 
