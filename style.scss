@@ -884,11 +884,42 @@ background-size: contain;
 }
 
 .main-container .view-box .view-content-portfolio{
-  height: 60%;
+  height: 50%;
 }
 
 .project-text{
  margin-right: 5%;
+}
+
+.view-content-portfolio{
+  margin-top: -30%;
+}
+
+.main-container .view-box .view-content-about {
+flex-direction: column;
+.my-image{
+  width: 90%;
+  margin-left: 10%;
+  margin-top: -10%;
+  .selfie-image{
+    transform: scale(0.5);
+  }
+  .my-image-text{
+    margin-top: -15%;
+  }
+}
+
+.my-education{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.my-work{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40%;
+}
+
 }
 
 }
