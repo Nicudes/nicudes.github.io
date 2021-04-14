@@ -838,11 +838,9 @@ $blue:darkslateblue;
     to {bottom: 0; opacity: 0;}
   }
 
-  @media screen and(max-width: 500px){
+ @media screen and(max-width: 500px){
 
-
-
-.navigation-bar{
+  .navigation-bar{
   width: 90%;
   margin-left: 0;
   padding-left: 20px;
@@ -879,6 +877,18 @@ display: none;
 
 .animated-title{
   margin-left: 0;
+}
+
+.fullsize-portfolio-image{
+background-size: contain;
+}
+
+.main-container .view-box .view-content-portfolio{
+  height: 60%;
+}
+
+.project-text{
+ margin-right: 5%;
 }
 
 }

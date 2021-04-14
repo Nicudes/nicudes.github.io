@@ -91,6 +91,8 @@ function NavAbout(){
     document.getElementById('view-content-portfolio').style.opacity= 0;
     document.getElementById('view-content-home').style.opacity= 0;
     document.getElementById('icon-wrapper').style.opacity= 0;
+    document.getElementById('my-skills-mobile').style.opacity=1;
+
     
     
     setTimeout(() => {
@@ -98,6 +100,8 @@ function NavAbout(){
         document.getElementById('view-content-contact').style.display = "none";
         document.getElementById('view-content-home').style.display = "none";
         document.getElementById('icon-wrapper').style.display = "none";
+        document.getElementById('my-skills-mobile').style.display="none";
+
     }, 400);
 
     
@@ -117,6 +121,8 @@ function NavContact(){
     document.getElementById('view-content-about').style.opacity= 0;
     document.getElementById('view-content-home').style.opacity= 0;
     document.getElementById('icon-wrapper').style.opacity= 0;
+    document.getElementById('my-skills-mobile').style.opacity=1;
+
     
     
     setTimeout(() => {
@@ -124,6 +130,8 @@ function NavContact(){
         document.getElementById('view-content-about').style.display = "none";
         document.getElementById('view-content-home').style.display = "none";
         document.getElementById('icon-wrapper').style.display = "none";
+        document.getElementById('my-skills-mobile').style.display="none";
+
     }, 400);
 
     
